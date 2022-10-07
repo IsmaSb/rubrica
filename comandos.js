@@ -61,7 +61,7 @@ punto.onclick = function(e){
     let valor = resultado.textContent;
     //console.log(valor.split('.'));
     if(valor.split('.').length>2) 
-    resultado.textContent =valor.replace(/\.+$/,"");
+    resultado.textContent =valor.replace(/\.+$/,".");
 }
 reset.onclick = function(e){
     resetear();
