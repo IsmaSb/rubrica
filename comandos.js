@@ -140,11 +140,15 @@ igual.onclick = function(e){
     resetear();
     resultado.textContent = res;
     numero.textContent = valor1;
+	  
+	if (numero=='' || symbol=='') {
+        return
+    	}else{
 
     let tbody = document.getElementById('history')
     tbody.innerHTML +=  numero + symbol + numero2 +"="+ res + "<tr></tr>"
-    const nuevo = {numero1: numero, symbol: symbol, numero2: numero2, igual: "=", resultado: res}
-    json.push(nuevo)
+	}
+
 
   }
 
